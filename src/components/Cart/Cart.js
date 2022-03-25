@@ -5,9 +5,6 @@ const Cart = ({item}) => {
     return (
         <div>
             <h4>Product Name: <span className='cart-decoration'>{name}</span></h4>
-            <div>
-            
-            </div>
         </div>
     );
 };

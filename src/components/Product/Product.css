@@ -18,12 +18,15 @@
 .product-info p{
     margin-bottom: 0;
     margin-top: 5px;
+    font-size: large;
+    font-weight: 600;
+
 }
 .product-name{
     font-family: 'Lato';
     font-style: normal;
-    font-weight: 400;
-    font-size: 21px;
+    font-weight: 700;
+    font-size: larger;
     line-height: 25px;
     margin-top: 7px;
 }

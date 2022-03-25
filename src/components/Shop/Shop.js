@@ -20,6 +20,7 @@ const Shop = () => {
         const newCart = [...cart, product];
         setCart(newCart);
     }
+    
 
     const handleRemoveFromCart = () =>{
         const removeCart = [];
