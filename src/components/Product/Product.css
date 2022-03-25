@@ -3,6 +3,7 @@
     height: 510px;
     border: 1px solid #95A0A7;
     border-radius: 8px;
+    box-shadow: 4px 14px 22px 12px #9e9d9d;
     position: relative;
 }
 .product img{
