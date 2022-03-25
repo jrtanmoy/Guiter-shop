@@ -7,6 +7,7 @@ import './Shop.css'
 const Shop = () => {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([]);
+    console.log(cart);
     // console.log(cart);
 
     useEffect( () =>{
@@ -21,6 +22,15 @@ const Shop = () => {
         setCart(newCart);
     }
     
+    const randomItemAddToCart = () =>{
+       const array = [...cart]
+       const element = array.sort(() => Math.random() - Math.random())
+                     .find(() => true);
+        const newItem = [element];
+        setCart(newItem)
+// console.log(element);
+    //    console.log(newItem);
+    }
 
     const handleRemoveFromCart = () =>{
         const removeCart = [];
@@ -53,6 +63,7 @@ const Shop = () => {
                         // key={item.id}
                         // item={item}
                         <Button
+                        randomItemAddToCart={randomItemAddToCart}
                         handleRemoveFromCart={handleRemoveFromCart}
                       ></Button>  
                     }

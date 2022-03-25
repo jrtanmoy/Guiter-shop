@@ -1,10 +1,10 @@
 import React from 'react';
 import './Button.css'
-const Button = ({handleRemoveFromCart}) => {
+const Button = ({randomItemAddToCart,handleRemoveFromCart}) => {
     // const { picture, name, price, id} = item;
     return (
         <div className='btn-style'>
-            <button>
+            <button onClick={() =>randomItemAddToCart()}>
             <p>Choose 1 for me randomly</p>
             </button>
             <br />
