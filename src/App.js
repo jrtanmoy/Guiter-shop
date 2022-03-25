@@ -1,10 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header/Header';
 
 function App() {
   return (
-    <div className="App">
-      <h1>hello react</h1>
+    <div className='body'>
+      <Header></Header>
+      {/* <Shop></Shop> */}
     </div>
   );
 }
