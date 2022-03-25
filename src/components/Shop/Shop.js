@@ -26,10 +26,8 @@ const Shop = () => {
        const array = [...cart]
        const element = array.sort(() => Math.random() - Math.random())
                      .find(() => true);
-        const newItem = [element];
+        const newItem =[element];
         setCart(newItem)
-// console.log(element);
-    //    console.log(newItem);
     }
 
     const handleRemoveFromCart = () =>{
@@ -59,9 +57,6 @@ const Shop = () => {
                         ></Cart>)
                     }
                     {
-                        // cart.map(item => <Button
-                        // key={item.id}
-                        // item={item}
                         <Button
                         randomItemAddToCart={randomItemAddToCart}
                         handleRemoveFromCart={handleRemoveFromCart}
