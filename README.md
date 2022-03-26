@@ -1,4 +1,4 @@
 # lucky-one-jrtanmoy
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## [Live site link](https://enchanting-basbousa-af2dee.netlify.app/)
 
