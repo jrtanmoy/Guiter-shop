@@ -13,6 +13,7 @@ const Product = ({product, handleAddToCart}) => {
             <div className='product-info'>
                 <p className='product-name'>Name: {name}</p>
                 <p>Price: ${price}</p>
+                {/* <p>id:{id}</p> */}
             </div>
             <button onClick={() => handleAddToCart(product)} className='btn-cart'>
                 <p className='btn-text'>Add to Cart</p>

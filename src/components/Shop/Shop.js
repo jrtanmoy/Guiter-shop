@@ -7,9 +7,7 @@ import './Shop.css'
 const Shop = () => {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([]);
-    console.log(cart);
-    // console.log(cart);
-
+    
     useEffect( () =>{
         fetch('data.json')
         .then(res=> res.json())
@@ -17,10 +15,15 @@ const Shop = () => {
     }, []);
 
     const handleAddToCart = (product) =>{
-        console.log(product);
         const newCart = [...cart, product];
-        setCart(newCart);
-    }
+            if(newCart.length <= 4){
+                setCart(newCart);
+            }
+            else{
+                alert('OOPs.You cant select more than 4 items.')
+            }
+        }
+        
     
     const randomItemAddToCart = () =>{
        const array = [...cart]
